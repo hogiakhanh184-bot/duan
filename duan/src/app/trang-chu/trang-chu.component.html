@@ -1,0 +1,19 @@
+<div class="home-container">
+	<h1>{{ title }}</h1>
+	<p class="subtitle">Khám phá các sản phẩm nổi bật, ưu đãi hấp dẫn và trải nghiệm mua sắm tuyệt vời!</p>
+	<input class="search-bar" type="text" placeholder="Tìm kiếm sản phẩm..." />
+	<section class="featured-products">
+		<h2>Sản phẩm nổi bật</h2>
+		<div class="product-list">
+			<div class="product-card" *ngFor="let product of products">
+				<img [src]="product.image" alt="{{ product.name }}" />
+				<h3>{{ product.name }}</h3>
+				<p class="price">{{ product.price | currency:'VND' }}</p>
+				<button class="buy-btn">Mua ngay</button>
+			</div>
+		</div>
+	</section>
+	<section class="promo-banner">
+		<span>Ưu đãi đặc biệt: Giảm giá 20% cho đơn hàng đầu tiên!</span>
+	</section>
+</div>
