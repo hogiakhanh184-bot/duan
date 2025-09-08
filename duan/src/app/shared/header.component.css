@@ -1,29 +1,53 @@
 
+
 .lamborghini-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 18px 48px;
-  background: #111;
-  color: #ffe600;
+  background: #181818;
+  color: #fff;
   font-family: 'Montserrat', 'Inter', Arial, sans-serif;
   box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
-.lamborghini-header .logo {
-  font-size: 2.2rem;
-  font-weight: 900;
-  letter-spacing: 3px;
-  color: #ffe600;
-  text-shadow: 2px 2px 8px #000;
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
-.lamborghini-header .nav a {
+.menu-icon {
+  width: 32px;
+  height: 32px;
+  filter: invert(1);
+}
+.menu-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
   color: #fff;
-  text-decoration: none;
-  margin: 0 18px;
-  font-size: 1.1rem;
-  font-weight: 500;
-  transition: color 0.2s;
 }
-.lamborghini-header .nav a:hover {
-  color: #ffe600;
+.header-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-bull {
+  height: 48px;
+  filter: invert(1);
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.icon {
+  width: 28px;
+  height: 28px;
+  filter: invert(1);
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+.icon:hover {
+  filter: invert(0.7) sepia(1) saturate(5) hue-rotate(40deg);
 }
