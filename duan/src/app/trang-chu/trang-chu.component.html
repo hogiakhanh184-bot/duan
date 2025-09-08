@@ -1,19 +1,16 @@
-<div class="home-container">
-	<h1>{{ title }}</h1>
-	<p class="subtitle">Khám phá các sản phẩm nổi bật, ưu đãi hấp dẫn và trải nghiệm mua sắm tuyệt vời!</p>
-	<input class="search-bar" type="text" placeholder="Tìm kiếm sản phẩm..." />
-	<section class="featured-products">
-		<h2>Sản phẩm nổi bật</h2>
-		<div class="product-list">
-			<div class="product-card" *ngFor="let product of products">
-				<img [src]="product.image" alt="{{ product.name }}" />
-				<h3>{{ product.name }}</h3>
-				<p class="price">{{ product.price | currency:'VND' }}</p>
-				<button class="buy-btn">Mua ngay</button>
-			</div>
+<div class="lamborghini-home">
+	<div class="hero-section">
+		<img class="hero-bg" src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/gateway-family/hero/aventador_ultimae_hero.jpg" alt="Lamborghini" />
+		<div class="hero-content">
+			<h1 class="hero-title">Lamborghini</h1>
+			<p class="hero-slogan">Drive the extraordinary</p>
+			<a class="hero-btn" href="#">Explore Models</a>
 		</div>
-	</section>
-	<section class="promo-banner">
-		<span>Ưu đãi đặc biệt: Giảm giá 20% cho đơn hàng đầu tiên!</span>
+	</div>
+	<section class="about-section">
+		<h2>About Lamborghini</h2>
+		<p>
+			Lamborghini is a world-renowned Italian brand, famous for its luxury sports cars and innovative design. Experience the thrill, power, and elegance that define Lamborghini.
+		</p>
 	</section>
 </div>
